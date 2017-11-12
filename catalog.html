@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Техномарт</title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="page-header">
+        <div class="top-header">
+            <ul>
+                <li class="logo"><a href=""></a></li>
+                <li class="search"><a href="">Поиск:</a></li>
+                <li class="favorites"><a href="">Закладки:</a></li>
+                <li class="cart"><a href="">Корзина: 10</a></li>
+                <li ><a href="">Оформить заказ</a></li>
+            </ul>
+        </div>
+        
+        <section class="middle-header">
+            <p></p>
+            <div class="phone">
+                <p>+7(812) 555-05-05</p> 
+                <p>г.Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
+            </div>
+            <div class="account">
+            <p>Равшан Джамшутович</p>
+            <a class="button-logout" href=""></a>
+            </div>
+            <ul>
+                <li><a class="button-account" href="">Мои заказы</a></li>
+                <li><a class="button-account" href="">Личный кабинет</a></li>
+            </ul>
+            
+        </section>
+        <nav class="main-menu">
+           <ul>
+               <li><a href="">Главная</a></li>
+               <li><a href="">Компания</a></li>
+               <li><a href="">Каталог</a></li>
+               <li><a href="">Новости</a></li>
+               <li><a href="">Спецпредложения</a></li>
+               <li><a href="">Доставка</a></li>
+               <li><a href="">Контакты</a></li>
+           </ul>
+            
+        </nav>
+    </header>
+    <main class="container">
+       <ul class="breadcrumbs">
+         <li><a href="#">Главная</a></li>
+         <li><a href="#">Каталог</a></li>
+         <li><a href="#">Инструменты</a></li>
+         <li>Перфораторы</li>
+        </ul>
+       <div class="catalog-item">
+           <h2>Перфораторы</h2>
+       </div>
+       <div class="filters">
+           <p>Фильтры:</p>
+           <div class="price">
+               <div>
+                   <input type="range" name="price-item" min="0" max="30000">
+                   <output name="price-item-min"></output>
+                   -
+                   <output name="price-item-max"></output>
+               </div>
+               <div class="vendors-filter">
+                   <p>Производители:</p>
+                   <ul>
+                       <li><input type="checkbox" name="vendor" value="Bosch" checked>Bosch</li>
+                       <li><input type="checkbox" name="vendor" value="Интерскол">Интерскол</li>
+                       <li><input type="checkbox" name="vendor" value="Makita" checked>Makita</li>
+                       <li><input type="checkbox" name="vendor" value="Dewalt">Dewalt</li>
+                       <li><input type="checkbox" name="vendor" value="Hitachi">Hitachi</li>
+                   </ul>
+               </div>
+               <div class="battery-type">
+                   <p></p>
+                   <ul>
+                       <li><input type="radio" name="battery-type" value="akk" checked>Аккумуляторные</li>
+                       <li><input type="radio" name="battery-type" value="setevie">Сетевые</li>
+                   </ul>
+               </div>
+               <a class="btn-apply-filter">Показать</a>
+           </div>
+       </div>
+       <div class="catalog-list">
+           <div class="sort-by">
+               <p>Сортировка:</p>
+               <ul class="sort-by">
+                   <li><a href="">По цене</a></li>
+                   <li><a href="">По типу</a></li>
+                   <li><a href="">По функционалу</a></li>
+                   <li class="ascending"></li>
+                   <li class="descending"></li>
+               </ul>
+           </div>
+           <section class="catalog-list">
+            <ul>
+               <li class="catalog-item">
+                    <img src="http://placehold.it/150x100">
+                    <h3>>Bosch BFG 3000</h3>
+                    <p>22500p</p>
+                    <div class="price">15500p</div>
+                    
+                </li>
+                <li class="catalog-item">
+                    <img src="http://placehold.it/150x100">
+                    <h3>>Bosch BFG 6000</h3>
+                    <p>30500p</p>
+                    <div class="price">25500p</div>
+                    
+                </li>
+                <li class="catalog-item-new">
+                    <a class="btn-add-cart">Купить</a>
+                    <a class="btn-add-favor">В закладки</a>
+                    <h3>>Bosch BFG 2000</h3>
+                    <div class="price">12500p</div>
+                </li>
+                <li class="catalog-item">
+                    <img src="http://placehold.it/150x100">
+                    <h3>>Bosch BFG 3000</h3>
+                    <p>22500p</p>
+                    <div class="price">15500p</div>
+                    
+                </li>
+                <li class="catalog-item-new">
+                    <img src="http://placehold.it/150x100">
+                    <h3>>Bosch BFG 6000</h3>
+                    <p>30500p</p>
+                    <div class="price">25500p</div>
+                    
+                </li>
+                <li class="catalog-item">
+                    <img src="http://placehold.it/150x100">
+                    <h3>>Bosch BFG 2000</h3>
+                    <div class="price">12500p</div>
+                </li>
+                <li class="catalog-item-new">
+                    <img src="http://placehold.it/150x100">
+                    <h3>>Bosch BFG 3000</h3>
+                    <p>22500p</p>
+                    <div class="price">15500p</div>
+                    
+                </li>
+                <li class="catalog-item">
+                    <img src="http://placehold.it/150x100">
+                    <h3>>Bosch BFG 6000</h3>
+                    <p>30500p</p>
+                    <div class="price">25500p</div>
+                    
+                </li>
+                <li class="catalog-item">
+                    <img src="http://placehold.it/150x100">
+                    <h3>>Bosch BFG 2000</h3>
+                    <div class="price">12500p</div>
+                </li>
+            </ul>
+            <ul class="page-number">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>Следующая</li>
+            </ul>
+        </section>
+        </div>
+        <article class="item-description">
+            <h4>Пара слов о перфораторах</h4>
+            <p>Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбения отверстий в кирпиче, бетоне и камне. Существуют электромеханические и пневматические перформаторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор "трехрежимников": водном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+        </article>
+       
+    </main>
+    <footer>
+        <section class="top-footer">
+            <ul>
+                <li><a href="">Техномарт</a></li>
+                <li><a href="">Компания</a></li>
+                <li><a href="">Новости</a></li>
+                <li><a href="">Каталог</a></li>
+                <li><a href="">Доставка</a></li>
+                <li><a href="">Контакты</a></li>
+            </ul>
+        </section>
+        <section class="middle-footer">
+            <div class="address-footer">
+                <p></p>
+                <ul>
+                    <li><a href="">Материалы</a></li>
+                    <li><a href="">Техника</a></li>
+                    <li><a href="">Инструмент</a></li>
+                    <li><a href="">Спецпредложения</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="bottom-footer">
+            <div class="copyright">
+                <p>2010-2017 Компания "Техномарт" <br> Все права защищены</p>
+            </div>
+            <div class="social">
+                <ul>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </div>
+            <div class="mail-to">
+                <p>Обратная связь:</p>
+                <a href="">mail@htmlacademy.ru</a>
+            </div>
+            <div class="creaotors">
+                <p>Разработано -</p>
+                <a href="www.htmlacademy.ru">htmlacademy.ru</a>
+            </div>
+        </section>
+    </footer>
+  </body>
+</html>
