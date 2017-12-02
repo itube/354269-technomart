@@ -1,0 +1,241 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 14px;
+    background-color: #f3f7f9;
+    
+}
+
+li {
+    list-style: none;
+}
+
+.header-top a {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.header-top li:first-child a {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+}
+
+.site-name {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 23px;
+    color: #ee3643;
+}
+
+.contacts .phone-number {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 21px;
+    line-height: 18px;
+    color: #ee3643;
+}
+.contacts .address {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #32425c;
+}
+
+.button-account {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 21px;
+    line-height: 18px;
+    text-decoration: none;
+    color: #000;
+}
+
+.main-menu a {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 17px;
+    line-height: 17px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.button {
+    width: 195px;
+    height: 38px;
+    padding: 14px 50px;
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #ee3643;
+}
+
+.catalog-list li  {
+    width: 300px;
+    height: 123px;
+}
+
+.catalog li h2 {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #fff;
+}
+
+.button-catalog {
+    width: 135px;
+    height: 38px;
+    padding: 14px 24px;
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 3px;
+    background: rgba(0, 0, 0, 0.1);   
+}
+
+.catalog-list li:first-child  {
+    background-color: #ffbf47;
+}
+
+.catalog-list li:nth-child(2)  {
+    background-color: #3bbce3;
+}
+.catalog-list li:last-child  {
+    background-color: #dc91d8;
+}
+
+.features-list li {
+    width: 300px;
+    height: 123px;
+}
+
+.features-list li:first-child  {
+    background-color: #8ed78f;
+}
+
+.features-list li:last-child  {
+    background-color: #ffc047;
+}
+
+.gallery h2 {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 36px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.gallery p {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.popular-items {
+    width: auto;
+    height: 100px;
+    background-color: #f9f5f0;
+}
+.popular-items h2 {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #32425c;
+}
+
+.preview-item {
+    width: 218px;
+    height: 318px;
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+}
+
+.preview-item h2 {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.preview-item p {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 18px;
+    color: #a9a9a9;
+    text-decoration: line-through;
+}
+
+.preview-item span {
+    width: 140x;
+    height: 37px;
+    background-color: #ee3643;
+    border-radius: 3px;
+    padding: 12px 35px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 18px;
+    color: #fff;
+}
+
+.popular-brands {
+    width: auto;
+    height: 100px;
+    background-color: #f9f5f0;
+}
+.popular-brands h2 {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #32425c;
+}
+
+.preview-brands {
+    width: 220px;
+    height: 141px;
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+}
+
+
+
+a.arrow {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 0;
+}
+
+.arrow::before {
+    content: "";
+    display: inline-block;
+    border: 20px solid #0074d9;
+    border-right-width: 10px;
+    border-left-width: 10px;
+    border-right-color: transparent;
+    border-left-color: transparent;
+}
+
+.arrow-up::before {
+    border-top-width: 0;
+}
+
+.arrow-down::before {
+    border-bottom-width: 0;
+}
