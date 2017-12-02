@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -57,34 +58,56 @@
            <h2>Перфораторы</h2>
        </div>
        <div class="filters">
-           <p>Фильтры:</p>
-           <div class="price">
-               <div>
-                   <input type="range" name="price-item" min="0" max="30000">
-                   <output name="price-item-min"></output>
-                   -
-                   <output name="price-item-max"></output>
-               </div>
-               <div class="vendors-filter">
-                   <p>Производители:</p>
-                   <ul>
-                       <li><input type="checkbox" name="vendor" value="Bosch" checked>Bosch</li>
-                       <li><input type="checkbox" name="vendor" value="Интерскол">Интерскол</li>
-                       <li><input type="checkbox" name="vendor" value="Makita" checked>Makita</li>
-                       <li><input type="checkbox" name="vendor" value="Dewalt">Dewalt</li>
-                       <li><input type="checkbox" name="vendor" value="Hitachi">Hitachi</li>
-                   </ul>
-               </div>
-               <div class="battery-type">
-                   <p></p>
-                   <ul>
-                       <li><input type="radio" name="battery-type" value="akk" checked>Аккумуляторные</li>
-                       <li><input type="radio" name="battery-type" value="setevie">Сетевые</li>
-                   </ul>
-               </div>
-               <a class="btn-apply-filter">Показать</a>
-           </div>
-       </div>
+           <p>Фильтр:</p>
+           <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+                   <fieldset>
+                           <legend>Цена:</legend>
+                           <input type="range" name="price-item" min="12500" max="25500">
+                           <output name="price-item-min"></output>
+                           -
+                           <output name="price-item-max"></output>
+                       </fieldset>
+                       <fieldset>
+                           <legend>Производители:</legend>
+                           <ul>
+                           <li class="filter-option">
+                               <input type="checkbox" name="Bosch" id="vendor-Bosch" value="Bosch" checked>
+                                <label for="vendor-Bosch">Bosch</label>
+                            </li>
+                           <li class="filter-option">
+                               <input type="checkbox" name="Interskol" id="vendor-Interskol" value="Interskol">
+                               <label for="vendor-Interskol">Interskol</label>
+                           </li>
+                           <li class="filter-option">
+                               <input type="checkbox" name="Makita" id="vendor-Makita" value="Makita" checked>
+                               <label for="vendor-Makita">Makita</label>
+                           </li>
+                           <li class="filter-option">
+                               <input type="checkbox" name="Dewalt" id="vendor-Dewalt" value="Dewalt">
+                               <label for="vendor-Dewalt">Dewalt</label>
+                           </li>
+                           <li class="filter-option">
+                               <input type="checkbox" name="Hitachi" id="vendor-Hitachi" value="Hitachi">
+                               <label for="vendor-Hitachi">Hitachi</label>
+                           </li>
+                           </ul>
+                       </fieldset>
+                       <fieldset>
+                           <legend>Питание:</legend>
+                           <ul>
+                               <li class="filter-option">
+                                   <input type="radio" name="Battery" id="type-battery" value="Battery" checked>
+                                   <label for="power-battery">Аккумуляторные</label>
+                               </li>
+                               <li class="filter-option">
+                                   <input type="radio" name="electric" id="type-electric" value="electric">
+                                   <label for="type-electric">Сетевые</label>
+                               </li>
+                           </ul>
+                       </fieldset>
+                       <button class="btn-apply-filter" type="submit">Показать</button>
+                   </form>
+         </div>
        <div class="catalog-list">
            <div class="sort-by">
                <p>Сортировка:</p>
@@ -92,8 +115,8 @@
                    <li><a href="">По цене</a></li>
                    <li><a href="">По типу</a></li>
                    <li><a href="">По функционалу</a></li>
-                   <li class="ascending"></li>
-                   <li class="descending"></li>
+                    <a class="arrow arrow-up" href="#">по возрастанию</a>
+                    <a class="arrow arrow-down" href="#">по убыванию</a>
                </ul>
            </div>
            <section class="catalog-list">
