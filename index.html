@@ -18,11 +18,11 @@
       </ul>
     <section class="header-middle">
       <p class="site-name">Интернет-магазин <br>строительных материалов <br>и инструментов для ремонта</p>
-      <div class="contacts">
-        <p class="phone-number">+7 (812) 555-05-05</p> 
-        <p class="address">г.Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
+      <div class="middle-info">
+        <span class="phone">+7(812) 555-05-55</span>
+        <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </div>
-      <ul>
+      <ul class="user-navigation">
         <li><a class="button-account" href="login.html">Войти</a></li>
         <li><a class="button-account" href="reg.html">Регистрация</a></li>
        </ul>
@@ -40,28 +40,29 @@
      </nav>
     </header>
     <main class="container">
-            <ul class="catalog-list">
-                <li>
-                    <h2>Материалы</h2>
-                    <a class="button-catalog" href="..">На любой вкус</a>
-                    <img src="img/materials.png">
-                </li>
-                <li>
-                    <h2>Инструмент</h2>
-                    <a class="button-catalog" href="..">На все случаи</a>
-                    <img src="img/instruments.svg">
-                </li>
-                <li>
-                    <h2>Техника</h2>
-                    <a class="button-catalog" href="..">Для стройки</a>
-                    <img src="img/technics.svg">
-                </li>
-            </ul>
-            <section class="gallery">
+			<section class="catalog-list">
+      	<ul>
+          <li>
+            <h2>Материалы</h2>
+            <a class="button-catalog" href="..">На любой вкус</a>
+            <img src="img/materials-icon.png" width="44" height="65">
+          </li>
+          <li>
+            <h2>Инструмент</h2>
+            <a class="button-catalog" href="..">На все случаи</a>
+            <img src="img/tool-icon.png" width="75" height="61">
+          </li>
+          <li>
+            <h2>Техника</h2>
+            <a class="button-catalog" href="..">Для стройки</a>
+            <img src="img/technics-icon.png" width="78" height="62">
+          </li>
+      	</ul>
+      	<article class="gallery">
                 <h2>Перфораторы</h2>
-                <p>Настоящие мужские игрушки</p>
+                <span>Настоящие мужские игрушки</span>
                 <figure class="gallery-content">
-                    <img src="img/slider-1.jpg">
+                    <img src="img/slider-1.jpg" width="620" height="260">
                 </figure>
                 <ul class="slides-switches">
                     <li class="slide-radio">
@@ -72,124 +73,126 @@
                     </li>
                 </ul>
                 <a class="button" href="catalog.html">Открыть каталог</a>
-              </section>
-              <ul class="features-list">
-                  <li>
-                    <h2>Скидки 50%</h2>
-                    <img src="img/discounts.svg">
-                    <a class="button-catalog" href="..">на 350 товаров</a>
-                  </li>
-                
-                <li>
-                   <h2>Доставка</h2>
-                    <img src="img/delivery.svg">
-                    <a class="button-catalog" href="..">Бесплатно</a>
-                  </li>
-            </ul>
-        <section class="popular-items">
-           <h2>Популярные товары:</h2>
-           <a class="button" href="fa.html">Все популярные товары</a>
-        </section>
-        <section class="popular-list">
-            <ul>
-                <li class="preview-item">
-                    <img src="img/catalog/bosch-bfg-9000.jpg">
-                    <h3>Перфоратор Bosch BFG 9000</h3>
-                    <p>32500 P.</p>
-                    <span>25500 P.</span>
+        	</article>
+        	<ul class="features-list">
+            <li>
+              <h2>Скидки 50%</h2>
+              <a class="button-catalog" href="..">на 350 товаров</a>
+              <img src="img/discounts-icon.png" width="59" height="72">
+            </li>
+            <li>
+              <h2>Доставка</h2>
+              <a class="button-catalog" href="..">Бесплатно</a>
+              <img src="img/delivery-icon.png" width="78" height="63">
+            </li>
+      	</ul>
+ 			</section>
+      <section class="popular-items">
+        <h2>Популярные товары:</h2>
+        <a class="button" href="fa.html">Все популярные товары</a>
+      </section>
+      <section class="popular-list">
+        <ul>
+          <li class="preview-item">
+            <img src="img/catalog/bosch-bfg-9000.jpg" width="217" height="168">
+            <h3>Перфоратор Bosch BFG 9000</h3>
+            <p>32500 P.</p>
+            <span>25500 P.</span>
+          </li>
+          <li class="preview-item">
+            <img src="img/catalog/bosch-bfg-3000.jpg">
+            <h3>Перфоратор Bosch BFG 3000</h3>
+            <p>22500 P.</p>
+            <span>15500 P.</span>
+          </li>
+          <li class="preview-item">
+            <img src="img/catalog/bosch-bfg-6000.jpg">
+            <h3>Перфоратор Bosch BFG 6000</h3>
+            <p>30500 P.</p>
+            <span>25500 P.</span>
+          </li>
+          <li class="preview-item new">
+            <img src="img/catalog/bosch-bfg-2000.jpg">
+            <h3>Перфоратор Bosch BFG 2000</h3>
+            <span>12500 P.</span>
+          </li>
+        </ul>
+      </section>
+      <section class="popular-brands">
+        <h2>Популярные производители:</h2>
+        <a class="button" href=".html">Все производители</a>
+      </section>
+      <section class="brands-list">   
+        <ul>
+          <li class="preview-brands">
+            <a href="#" aria-label="Bosch"><img src="img/brands/bosch.jpg" width="126" height="37"></a>
+          </li>
+          <li class="preview-brands">
+            <a href="#" aria-label="Makita"><img src="img/brands/Makita.jpg" width="124" height="40"></a>
+          </li>
+          <li class="preview-brands">
+            <a href="#" aria-label="DeWaLT"><img src="img/brands/DeWALT.jpg" width="146" height="44"></a>
+          </li>
+          <li class="preview-brands">
+            <a href="#" aria-label="Interskol"><img src="img/brands/Interskol.jpg" width="184" height="32"></a>
+          </li>
+          <li class="preview-brands">
+            <a href="#" aria-label="HITACHI"><img src="img/brands/Hitachi.jpg" width="169" height="31"></a>
+          </li>
+          <li class="preview-brands">
+            <a href="#" aria-label="LG"><img src="img/brands/LG.jpg" width="121" height="73"></a>
+          </li>
+          <li class="preview-brands">
+            <a href="#" aria-label="AEG"><img src="img/brands/AEG.jpg" width="151" height="84"></a>
                 </li>
-                <li class="preview-item">
-                    <img src="img/catalog/bosch-bfg-3000.jpg">
-                    <h3>Перфоратор Bosch BFG 3000</h3>
-                    <p>22500 P.</p>
-                    <span>15500 P.</span>
-                </li>
-                <li class="preview-item">
-                    <img src="img/catalog/bosch-bfg-6000.jpg">
-                    <h3>Перфоратор Bosch BFG 6000</h3>
-                    <p>30500 P.</p>
-                    <span>25500 P.</span>
-                </li>
-                <li class="preview-item">
-                    <img src="img/catalog/bosch-bfg-2000.jpg">
-                    <h3>Перфоратор Bosch BFG 2000</h3>
-                    <span>12500 P.</span>
-                </li>
-            </ul>
-        </section>
-        <section class="popular-brands">
-                <h2>Популярные производители:</h2>
-                <a class="button" href=".html">Все производители</a>
-        </section>
-        <section class="brands-list">   
-            <ul>
-                <li class="preview-brands">
-                    <a href="#" aria-label="Bosch"><img src="img/brands/bosch.jpg"></a>
-                </li>
-                <li class="preview-brands">
-                    <a href="#" aria-label="Makita"><img src="img/brands/Makita.jpg"></a>
-                </li>
-                <li class="preview-brands">
-                    <a href="#" aria-label="DeWaLT"><img src="img/brands/DeWALT.jpg"></a>
-                </li>
-                <li class="preview-brands">
-                    <a href="#" aria-label="Interskol"><img src="img/brands/Interskol.jpg"></a>
-                </li>
-                <li class="preview-brands">
-                    <a href="#" aria-label="HITACHI"><img src="img/brands/Hitachi.jpg"></a>
-                </li>
-                <li class="preview-brands">
-                    <a href="#" aria-label="LG"><img src="img/brands/LG.jpg"></a>
-                </li>
-                <li class="preview-brands">
-                    <a href="#" aria-label="AEG"><img src="img/brands/AEG.jpg"></a>
-                </li>
-                <li class="preview-brands">
-                    <a href="#" aria-label="Metabo"><img src="img/brands/Metabo.jpg"></a>
-                </li>
-            </ul>
-        </section>
-        <section class="services">
-            <div class="services-decriptions">
-               <h2>Сервисы</h2>
-               <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-                <ul class="features">
-                    <li><a href="">Доставка</a></li>
-                    <li><a href="">Гарантия</a></li>
-                    <li><a href="">Кредит</a></li>
-                </ul>
-                <section class="delivery">
-                    <h3>Доставка</h3>
-                    <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо зарабатываем, поднимая его на этаж!</p>
-                    <img src="img/services-1.png">
-                </section>
-            </div>           
-        </section>
-        <section class="about">
-            <div class="about-us">
-                <h3>Компания "Техномарт"</h3>
-                <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушным любителей сэкономить на гасторбайтерах. <br>
-                Мы можем доставить ваш товар в самые удаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
-                <ul class="delivery-company">
-                    <li class="delivery-1">Деловые линии</li>
-                    <li class="delivery-2">Автотрейдинг</li>
-                    <li class="delivery-3">ЖелДорЭкспедиция</li>
-                </ul>
-                <a class="button" href=".html">Подробнее о компании</a>
-            </div>
-            <div class="contacts">
-                <h3>Контакты</h3>
-                <p>Вы можете забрать товар сами, заехав в наш офис</p>
-                <img src="http://placehold.it/150x100">
-                <a class="button" href=".html">Заблудились? Напишите нам!</a>
-            </div>
+          <li class="preview-brands">
+            <a href="#" aria-label="Metabo"><img src="img/brands/Metabo.jpg" width="204" height="69"></a>
+          </li>
+        </ul>
+      </section>
+      <section class="services">
+        <div class="services-info">
+          <h2>Сервисы</h2>
+          <p>Хороший интернет-магазин отличается от плохого не только ценами! <br> Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+        </div>
+        <div class="features">
+          <ul>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Гарантия</a></li>
+            <li><a href="#">Кредит</a></li>
+          </ul>
+          <section class="delivery">
+            <h3>Доставка</h3>
+            <p>Мы с удовольствием доставим ваш товар прямо <br>  к вашему подъезду совершенно бесплатно! <br> Ведь мы неплохо зарабатываем, <br> поднимая его на этаж!</p>
+            <im1g src="img/services-1.png">
+          </section>
+        </div>
+      </section>
+      <section class="about">
+        <div class="about-us">
+          <h3>Компания "Техномарт"</h3>
+          <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушным любителей сэкономить на гасторбайтерах.</p>
+          <p>Мы можем доставить ваш товар в самые удаленные точки России! <br> Техномарт работает со многими транспортными компаниями:</p>
+          <ul class="delivery-company">
+            <li class="delivery-1">Деловые линии</li>
+            <li class="delivery-2">Автотрейдинг</li>
+            <li class="delivery-3">ЖелДорЭкспедиция</li>
+          </ul>
+          <a class="button" href=".html">Подробнее о компании</a>
+        </div>
+        <div class="contacts">
+          <h3>Контакты</h3>
+          <p>Вы можете забрать товар сами, <br> заехав в наш офис</p>
+          <img src="img/map.png" width="300" height="158">
+          <a class="button" href=".html">Заблудились? Напишите нам!</a>
+         </div>
         </section>
     </main>
     <footer>
         <section class="footer-top">
-           <h2 class="visually-hidden">Футер верх</h2>
+           <!-- <h2 class="visually-hidden">Футер верх</h2> -->
+           <a class="logo">Техномарт</a>
             <ul>
-                <li><a href="">Техномарт</a></li>
                 <li><a href="">Компания</a></li>
                 <li><a href="">Новости</a></li>
                 <li><a href="">Каталог</a></li>
@@ -198,7 +201,7 @@
             </ul>
         </section>
         <section class="footer-middle">
-            <h2 class="visually-hidden">Футер середина</h2>
+             <!-- <h2 class="visually-hidden">Футер середина</h2> -->
             <p class="footer-contacts">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br> +7(812)555-05-55</p>
             <ul>
                 <li><a href="#">Материалы</a></li>
@@ -208,7 +211,7 @@
             </ul>
         </section>
         <section class="footer-bottom">
-           <h2 class="visually-hidden">Футер низ</h2>
+            <!-- <h2 class="visually-hidden">Футер низ</h2> -->
             <p>2010-2017 Компания "Техномарт" <br> Все права защищены</p>
             <ul class="social-buttons">
                 <li><a class="social-btn-vk" href="#">Вконтакте</a></li>
