@@ -526,23 +526,65 @@ main.container {
     background-color: #ffc047;
 }
 
+.gallery {
+    
+}
+
+.slide-1 {
+    position: relative;
+    margin-top: 10px;
+    width: 620px;
+    height: 266px;
+}
+
 .gallery h2 {
+    position: absolute;
+    padding-left: 26px;
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 36px;
     line-height: 30px;
+    color: #fff;
     font-weight: bold;
     text-transform: uppercase;
 }
 
 .gallery span {
+    position: absolute;
+    top: 60px;
+    padding-left: 26px;
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 18px;
     line-height: 24px;
+    color: #fff;
 }
 
-.gallery-content {
-		padding: 0;
-		margin: 0;
+.gallery .button.gallery {
+    
+    top: -65px;
+    left: 25px;
+}
+
+.slides-switches-radio {
+    position: absolute;
+    
+    width: 30px;
+    top: 200px;
+    left: 300px;
+}
+
+.slide-radio {
+    display: inline;
+    width: 10px;
+}
+
+.slides-switches-radio .slide-btn {
+    
+    height: 10px;
+    margin-right: 20px;
+    background: url(../img/icon-slider-dots.png) no-repeat;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
 }
 
 .popular-items {
@@ -760,6 +802,15 @@ main.container {
 		margin-bottom:20px;
 }
 
+.preview-brands {
+    width: 220px;
+    height: 140px;
+}
+
+.preview-brands:hover {
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+}
+
 .preview-brands img {
     max-width: 100%;
     height: auto;
@@ -923,6 +974,14 @@ main.container {
     line-height: 20px;
     color: #000;
 		padding-bottom: 20px; 
+}
+
+.container-modal {
+    
+}
+
+.container-modal .write-us {
+    
 }
 
 footer {
