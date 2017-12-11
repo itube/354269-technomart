@@ -97,7 +97,6 @@ li {
 
 .search {
     width: 270px;
-    
     color: #fff;
 }
 
@@ -533,10 +532,6 @@ main.container {
     background-color: #ffc047;
 }
 
-.gallery {
-    
-}
-
 .slide-1 {
     position: relative;
     margin-top: 10px;
@@ -749,8 +744,9 @@ main.container {
 }
 
 .preview-item span {
+    position: relative;
     width: 140x;
-    height: 37px;
+    height: 40px;
     background-color: #ee3643;
     border-radius: 3px;
     box-sizing: border-box;
@@ -762,6 +758,17 @@ main.container {
     color: #fff;
     margin-bottom: 20px;
     cursor: default;
+}
+
+.preview-item span.new-price:after{
+    content: '';
+    position: absolute;
+    top:0 ;
+    right: -20px;
+    width: 0;
+    height: 0;
+    border: 20px solid white;
+    border-left-color:#ee3643;
 }
 
 .popular-brands {
@@ -855,6 +862,7 @@ main.container {
 }
 
 .features ul {
+    
 		float: left;
 		width: 240px;
 		padding: 0;
@@ -864,47 +872,39 @@ main.container {
 .features li {
 		position: relative;
 		vertical-align: middle;
-		height: 61px;
-		width: 240px;
-		background-color: #32425c;
-		padding-left: 22px;
-		box-sizing: border-box;
 }
 
-.features a {
-		position: absolute;
-		top: 25%;		
+.features button {
+		font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 21px;
+		font-weight: bold;
+		line-height: 30px;
+		color: #fff;		
+    height: 61px;
+		width: 240px;
+		background-color: #32425c;
+		box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
 }
 
 .features li:first-child {
 		background-color: #fff;
 }
 
-.features li:first-child a {	
+.features li:first-child button {	
 		color: #32425c;
+    background-color: #fff;
 }
 
-.features li:hover {
-		background-color: #293449;
-}
-
-.features li:first-child:hover a {
-		color: #fff;
-}
-
-.features li a {
-		font-family: "Cuprum", "Arial", sans-serif;
-    font-size: 21px;
-		font-weight: bold;
-		line-height: 30px;
-		color: #fff;
-}
-
-.features li a {
-		color: #fff;
+.features li:hover button {
+		background-color: #fff;
+    color: #32425c;
 }
 
 .delivery {
+    position: relative;
     float: right;
 		width: 620px;
 		height: 300px;
@@ -912,6 +912,17 @@ main.container {
 		background-image: url(../img/services-1.png);
     background-position: 100% 70%;
     background-repeat: no-repeat;
+}
+
+.delivery::after {
+		content: '';
+    position: absolute;
+    background: url(../img/services-shadow.png) no-repeat;
+    background-position: 0 0;
+    height: 272px;
+    width: 20px;
+    top: -40px;
+    left: -90px;
 }
 
 .delivery h3 {
@@ -981,14 +992,6 @@ main.container {
     line-height: 20px;
     color: #000;
 		padding-bottom: 20px; 
-}
-
-.container-modal {
-    
-}
-
-.container-modal .write-us {
-    
 }
 
 footer {
@@ -1391,10 +1394,6 @@ fieldset label {
 		font-size: 15px;
 		line-height: 20px;
 		text-transform: uppercase;    
-}
-
-fieldset input {
-    p1adding-top: 39px;
 }
 
 .filter h3 {
